@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Napelemek</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/napelem.css">
+	<link rel="stylesheet" href="css/mainhtml.css">
+	<link type='text/css' rel='stylesheet' href='css/kviz.css' />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<script>
+		function panelek(db) {
+			const panelek = document.getElementById('panelek');
+			panelek.innerHTML = "";
+			for (i = 0; i < db; i++) {
+				panelek.innerHTML += "<img src='img/napelem_ikon.png'>";
+			}
+			panelek.innerHTML += "<br>(" + db + " db)";
+			document.getElementById('osszteljesitmeny').value = db * 275;
+			document.getElementById('tetofelulet').value = db * 3.5;
+		}
+	</script>
+
+	<style>
+		#bal {
+			float: left;
+			width: 50%;
+		}
+		#elso,#masodik,
+		#harmadik,#negyedik,
+		#otodik,#hatodik,
+		#hetedik,#nyolcadik,
+		#kilencedik,#tizedik {
+			float: left;
+			width: 10vw;
+			height: 10vw;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			border: solid 1px black;
+		}
+
+		#jobb {
+			float: left;
+			padding: 1vw;
+		}
+
+		#original {
+			width: 10vw;
+		}
+	</style>
+
+</head>
+
+<body onload="feltolt()">
+
+	<div class="fixed-side-navbar">
+		<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#home"><span>Idézet</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#cim"><span>Cím</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#second"><span>Űrkutatás</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#napero"><span>Naperőművek</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#napero2"><span>Naperőművek2</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#erdekes"><span>Érdekességek</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#ervek"><span>Érvek a napelem mellett</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#termeszet"><span>Természet</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#kalkulator"><span>Napelem Kalkulátor</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#jatek"><span>Játék</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#kviz"><span>Kvíz</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#galeria"><span>Galéria</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#funfact"><span>fun-fact</span></a></li>
+		</ul>
+	</div>
+
+	<div class="parallax-content baner-content" id="home">
+		<div class="container">
+			<div class="first-content">
+				<span style="text-shadow: 2px 2px 5px black">„Aki nem veszi komolyan a környezeti problémákat, maga is
+					egy közülük.”</span>
+				<div class="primary-button">
+					<a href="#cim">Tovább</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="second-content baner-content2" id="cim">
+		<div class="container">
+			<h1>Napelem: a jövő</h1>
+		</div>
+	</div>
+
+	<div class="second-content" id="second">
+		<div class="container">
+			<div class="row">
+				<div class="left-text">
+					<h5>Természetesen az űrkutatás folyamán<br> merült fel először a napelem kiváló használhatósága.
+						<br>A műholdakon ma is a napelemek adják az energiát az ott lévő berendezéseknek.
+					</h5>
+					<br>
+					<br>
+					<h5>A NASA jövőt illető terveiben is szerepet kapnak a napelemes rendszerek, amelyek segíthetnek a
+						világegyetem felfedezésében.
+						Például az Elon Musk irányította, alapította SpaceX nevű vállalkozás is ezekre alapszik.
+						Ez is igazolja, hogy a napelemes rendszer a jövőt jelenti.</h5>
+					<br>
+					<br>
+					<h5>A ROSA újdonsága, hogy a hajlékony napelemfelület révén kb. ötödakkora térfogatúra
+						összehajtható, mint a megszokott, a világűrben harmonikaszerűen kinyíló napelemtáblák.
+						Emellett a szerkezet 20%-os tömegcsökkentést s lehetővé tesz. A kísérletet az Amerikai Légierő
+						vezette be.</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="napero-content" id="napero">
+		<div class="container">
+			<div class="row">
+				<div class="left-text">
+					<h5 style="color:#f9fafa">Hihetetlen fejlődésen ment át a napelem, és az innováció a mai napig sem
+						állt meg.
+						Ha mindez nem is a hatékonyságra és teljesítményre hegyeződik ki, hanem a
+						felhasználásra,
+						a telepítés helyére, akkor is elmondható, hogy a napelemmel a határ a csillagos ég.
+					</h5>
+					<br>
+					<h5 style="color:#f9fafa">
+						Az ember bármikor nyugodtan megtermelheti a saját energiaszükségletét,
+						sőt, nem is nagy füstfelhők között, hanem tisztán, gyorsan és hatásosan.
+						<br>
+						<br>
+						Bizony ez jelenti az igazi változást, és nagyon úgy tűnik, hogy tömegtermeléssel elérhető
+						árhoz közelít a napelemrendszer ára.
+					</h5>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="napero-content2" id="napero2">
+		<div class="container">
+			<div class="row">
+				<div class="left-text">
+					<h5>Ha a napelem egyik legfőbb negatívumát kellene kiemelni, akkor a szakértők egyetértenének abban,
+						hogy ez bizony az időjárásfüggőség.<br><br>
+						A kínai kutatók egy olyan szerves vékony rétegű napelemet fejlesztettek, amely hatékonysága 17,3
+						százalékos. A tandem cellák különböző rétegei képesek elnyelni a fény különböző hullámait. Ez az
+						jelenti, hogy hatékonyabban használhatjuk a napsugárzást és magas energiaátalakítási arányt
+						érhetünk el.<br><br>
+						Ahelyett, hogy az eső rontana a termelésen, a panel az esőcseppek segítségével is képes
+						energiát termelni.<br><br>
+						Sajnos a mai napig nincs hatékony,széles körben használható energiatárolási megoldás.
+						<br>
+					</h5>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fontos-content" id="erdekes">
+		<div class="container">
+			<div class="row">
+				<div class="left-text">
+					<h4>Érdekességek:</h4>
+					<div class="line-dec"></div>
+					<ul>
+						<li style="font-size:25px; text-shadow:2px 2px 5px black">- A napelem hatásfokának külső
+							befolyásoló tényezői:
+							A napfény hasznosítható maximális energiamennyisége Magyarországon, nyáron délben = 1000
+							W/m2 .
+							Napsütéses órák száma: 1900-2200 óra/év.
+							A besugárzott (kinyerhető) energia mennyisége Magyarországon 1300 kWh/m2/év.</li>
+						<li style="font-size:25px; text-shadow:2px 2px 5px black">- 1 négyzetméter napelem egy évben
+							hozzávetőleg 150 kilowattórát termel.
+							A Paks 2 erőmű tervezett áramtermelő kapacitása hozzávetőleg 2000 MW.</li>
+						<li style="font-size:25px; text-shadow:2px 2px 5px black">- A fény beesési szöge:
+							Új telepítési trend a kelet-nyugati tájolás.
+							Jobb területi lefedettség: 75%-kal nagyobb villamos teljesítmény, 35%-kal több villamos
+							áram.</li>
+						<li style="font-size:25px; text-shadow:2px 2px 5px black">Áramtermelés növelésének lehetséges
+							útjai:<br>
+							1. Összetett, többrétegű napelem cellák (multijunction): akár több, mint 20 réteg.<br>
+							2. Fókuszálás (fényérzékeny felület 1/20-ra csökkentése)<br>
+							3. Napkövetés<br>
+							4. Hibrid kollektor PVT (PhotoVoltaics/Thermal)<br> </li>
+						<li style="font-size:25px; text-shadow:2px 2px 5px black">- Az 1935 darab, magyarországi ipari
+							naperőmű összkapacitása októberre elérte az 1221,873 megawattot –
+							ezzel a villamosenergia-rendszer jelenlegi bruttó teljesítőképességének 12,57 százalékát
+							adják,
+							ez az arány várhatóan tovább nő majd.</li>
+						<li style="font-size:25px; text-shadow:2px 2px 5px black">- Ossola elnevezésű cég az úszó
+							napelemek segítségével biztosítja áramfogyasztásának nagyjából 10 százalékát.</li>
+						<li style="font-size:25px; text-shadow:2px 2px 5px black">- 125 százalékkal javíthatja a
+							napelemek elnyelőképességét, ha a cellákat sakktáblaszerű mintában helyezik el</li>
+					</ul>
+					<div class="primary-button">
+						<a href="http://www.mekh.hu/" target="_blanck">mekh.hu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="erv-content" id="ervek">
+		<div class="container">
+			<div class="row">
+				<div class="left-text">
+					<h1>Érvek a napelem mellett</h1>
+					<ul>
+						<li><b style="color:orange">- Pozitív ökológiai lábnyom:</b> egy napelem átlagosan 3-6 éven
+							belül tudja visszatermelni a gyártásához felhasznált energiát.
+							Átlagos életkoruk 25 év, ez idő alatt már több energiát termel, mint amely az előállításához
+							volt szükséges.</li>
+						<li><b style="color:orange">- Villamos hálózatok hatékonyságának javítása:</b> a napelemes
+							rendszerek központi, vagy decentralizált módon is felépíthetők.
+							Ezek a rendszerek képesek javítani a hálózat stabilitásán. Szükség szerint a napelemek
+							akkumulátorokkal is kiépíthetőek.</li>
+						<li><b style="color:orange">- Zöldebb környezet:</b> Európában csaknem 1500 GWp napelem
+							telepíthető, ugyanis az EU 27 tagállamának 22 000 km2 össz-alapterületű épületeinek 40%-a
+							alkalmas napelem telepítésére.
+							Ez körülbelül az európai áramfogyasztás 40%-át tudná fedezni 2020-ra, a maga 1400 Twh
+							energiájával.
+							A napelemek minimális karbantartást igényelnek, nem zajosak, sem zavaróak, tiszta energiát
+							nyújtanak.</li>
+						<li><b style="color:orange">- Nem korlátozott:</b> az ipari termelésük évente óriási mértékben
+							növekszik és bőséges kínálat van belőlük, plusz a napelem-párti országokban több ezer
+							munkahely jött létre a napelemek kapcsán.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="nap-content projects-content" id="termeszet">
+		<div class="container">
+			<div class="row">
+				<div class="left-text">
+					<h5>Amit nagyon fontos kijelenteni a napelem egészségre gyakorolt hatása kapcsán,
+						hogy össze sem lehetne hasonlítani ezen a téren például egy szén-,
+						vagy atomerőművel, hiszen nem okoz légszennyezettséget, nem okoz sugárzást,
+						ezáltal tüdőrákot vagy éppen asztmát – legalábbis közvetlen módon nem.
+					</h5>
+					<br>
+					<h5>
+						Jelenleg egyetlen olyan kutatásról sem tudunk, amelyik mérhető formában bebizonyította
+						volna, hogy egy napelem,
+						esetleg egy komplett napelem farm bármilyen negatív egészségügyi hatással járt volna az
+						emberek,
+						vagy a környező élővilág számára.
+					</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="kalkulator-content projects-content" id="kalkulator">
+		<div class="container">
+			<div class="row">
+				<section id="kalkulator">
+					<h4>Tervezze meg napelem rendszerét!</h4>
+					<br>
+					<h5 style="font-size:23px">Egy magyar család átlagos háztartásának éves villamos energia igénye kb.
+						3 000 kWh. Ezt már előállíthatjuk egy 2,5 kW-os napelemes rendszer segítségével, amihez
+						hozzávetőlegesen 15 négyzetméter tetőfelületre van szükségünk.<br><br>
+						A napelem kiválasztása előtt meg kell határoznunk azt, hogy egy évben mekkora energiafogyasztást
+						kívánunk lefedni. Ha megvan, mennyit fogyasztunk, akkor ahhoz méretezünk egy rendszer
+						teljesítményét. A napelemes rendszerünk névleges teljesítménye kb 80-85%-a legyen az éves
+						energiafogyasztásunknak.<br><br>
+						Kalkulátorunkkal meghatározhatja, hogy adott számú panelből kiépített rendszer esetén mekkora
+						teljesítményre számíthat, és mekkora tetőfelület szükséges a rendszer telepítéséhez!<br><br>
+
+					</h5>
+
+					<div class="row">
+
+						<div class="col-md-2 h-100"></div>
+						<div class="col-md-8 h-100">
+							<div class="border p-3 bg-light">
+								<p><b>A csúszka segítségével állítsa be a kívánt panelszámot!</b></p>
+								<p class="text-info">A számításnál az ideális DK-i tájolással és 35°-os dőlészögű
+									tetővel számolunk!
+								<form>
+									<div class="row">
+										<div class="col-12 col-md-4">
+											<label for="panelteljesitmeny">Panelteljesítmény [W] : </label>
+										</div>
+										<div class="col-12 col-md-8">
+											<input type="number" id="panelteljesitmeny" value="275" disabled>
+										</div>
+									</div>
+									<div class="row bg-white rounded p-3 text-info">
+										<div class="col-12 col-md-4">
+											<label for="panelszam">Panelek száma [db] :</label>
+										</div>
+										<div class="col-12 col-md-8">
+											<input type="range" min="2" max="32" value="8" step="2"
+												class="slider bg-light" id="panelszam" oninput="panelek(this.value);">
+											<div id="panelek"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-4">
+											<label for="osszteljesitmeny">Összteljesítmény [W] :</label>
+										</div>
+										<div class="col-12 col-md-8">
+											<div class="slidecontainer">
+												<input type="number" id="osszteljesitmeny" disabled>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-4">
+											<label for="tetofelulet">Tetőfelület [m<sup>2</sup>] :</label>
+										</div>
+										<div class="col-12 col-md-8">
+											<div class="slidecontainer">
+												<input type="number" id="tetofelulet" disabled>
+											</div>
+										</div>
+									</div>
+								</form>
+								<div class="col-md-2 h-100"></div>
+								<script>
+									panelek(8);
+								</script>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="jatek-content" id="jatek">
+		<div class="container2">
+			<h1 style="color:black">Rakd ki a napelemet!</h1>
+			<br>
+			<br>
+			<div class="row">
+
+				<div class="col-md-8">
+
+					<div id="bal">
+						<div id="elso" onclick="csere('elso')"></div>
+						<div id="masodik" onclick="csere('masodik')"></div>
+						<div id="harmadik" onclick="csere('harmadik')"></div>
+
+						<div id="negyedik" onclick="csere('negyedik')"></div>
+						<div id="otodik" onclick="csere('otodik')"></div>
+						<div id="hatodik" onclick="csere('hatodik')"></div>
+
+						<div id="hetedik" onclick="csere('hetedik')"></div>
+						<div id="nyolcadik" onclick="csere('nyolcadik')"></div>
+						<div id="kilencedik" onclick="csere('kilencedik')"></div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4">
+					<div id="jobb">
+						<h1 style="color:black">Az eredeti kép:</h1>
+						<img src="puzzle_pic/original.png" id="original">
+						<br>
+						<br>
+						<br>
+						<input type="button" value="Keverés" onclick="keveres()">
+						<h1 style="color:black">Lépések száma:<h1>
+								<h1 style="color:black" id="lepesek">
+									</p>
+					</div>
+				</div>
+				<script>
+					var ures = "kilencedik"
+					function feltolt() {
+						document.getElementById("elso").style.backgroundImage = "url('puzzle_pic/1.png')";
+						document.getElementById("masodik").style.backgroundImage = "url('puzzle_pic/2.png')";
+						document.getElementById("harmadik").style.backgroundImage = "url('puzzle_pic/3.png')";
+						document.getElementById("negyedik").style.backgroundImage = "url('puzzle_pic/4.png')";
+						document.getElementById("otodik").style.backgroundImage = "url('puzzle_pic/5.png')";
+						document.getElementById("hatodik").style.backgroundImage = "url('puzzle_pic/6.png')";
+						document.getElementById("hetedik").style.backgroundImage = "url('puzzle_pic/7.png')";
+						document.getElementById("nyolcadik").style.backgroundImage = "url('puzzle_pic/8.png')";
+						document.getElementById("kilencedik").style.backgroundImage = "none";
+					}
+					var szamlalo = 0;
+					function csere(hely) {
+						szamlalo++;
+						document.getElementById("lepesek").innerHTML = szamlalo;
+						if (hely == "masodik" && (ures == "elso" || ures == "harmadik" || ures == "otodik")) {
+							csere2(hely);
+						}
+
+						if (hely == "elso" && (ures == "masodik" || ures == "negyedik")) {
+							csere2(hely);
+						}
+
+						if (hely == "harmadik" && (ures == "masodik" || ures == "hatodik")) {
+							csere2(hely);
+						}
+
+						if (hely == "negyedik" && (ures == "elso" || ures == "otodik" || ures == "hetedik")) {
+							csere2(hely);
+						}
+
+						if (hely == "otodik" && (ures == "masodik" || ures == "negyedik" || ures == "hatodik" || ures == "nyolcadik")) {
+							csere2(hely);
+						}
+
+						if (hely == "hatodik" && (ures == "harmadik" || ures == "otodik" || ures == "kilencedik")) {
+							csere2(hely);
+						}
+						if (hely == "hetedik" && (ures == "negyedik" || ures == "nyolcadik" || ures == "tizedik")) {
+							csere2(hely);
+						}
+						if (hely == "nyolcadik" && (ures == "otodik" || ures == "hetedik" || ures == "kilencedik")) {
+							csere2(hely);
+						}
+						if (hely == "kilencedik" && (ures == "hatodik" || ures == "nyolcadik")) {
+							csere2(hely);
+						}
+						document.getElementById("lepesek").innerHTML = lepes;
+					}
+					function csere2(str) {
+
+						document.getElementById(ures).style.backgroundImage = document.getElementById(str).style.backgroundImage;
+						document.getElementById(str).style.backgroundImage = "none";
+						ures = str;
+
+					}
+					function keveres() {
+						var tomb = new Array();
+						var i;
+						var vel;
+						var meret = 0;
+						do {
+							vel = Math.floor(Math.random() * 8) + 1;
+							i = 0;
+							while (i < 8 && tomb[i] != vel) { i++; }
+							if (i == 8) tomb.push(vel);
+							meret = tomb.length;
+						} while (meret < 8);
+						tomb[8] = 9;
+						document.getElementById("elso").style.backgroundImage = 'url(puzzle_pic/' + tomb[0] + '.png)';
+						document.getElementById("masodik").style.backgroundImage = 'url(puzzle_pic/' + tomb[1] + '.png)';
+						document.getElementById("harmadik").style.backgroundImage = 'url(puzzle_pic/' + tomb[2] + '.png)';
+						document.getElementById("negyedik").style.backgroundImage = 'url(puzzle_pic/' + tomb[3] + '.png)';
+						document.getElementById("otodik").style.backgroundImage = 'url(puzzle_pic/' + tomb[4] + '.png)';
+						document.getElementById("hatodik").style.backgroundImage = 'url(puzzle_pic/' + tomb[5] + '.png)';
+						document.getElementById("hetedik").style.backgroundImage = 'url(puzzle_pic/' + tomb[6] + '.png)';
+						document.getElementById("nyolcadik").style.backgroundImage = 'url(puzzle_pic/' + tomb[7] + '.png)';
+						document.getElementById("kilencedik").style.backgroundImage = 'url(puzzle_pic/' + tomb[8] + '.png)';
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="kviz-content" id="kviz">
+		<div class="container">
+			<div class="row">
+
+				<body>
+					<p class="kvizcim">Napelem kvíz</p>
+					<div id='container'>
+
+						<br />
+						<div id='quiz'></div>
+						<div class='button' id='next'><a href='#'>Következő</a></div>
+						<div class='button' id='prev'><a href='#'>Előző</a></div>
+						<div class='button' id='start'> <a href='#'>Előről</a></div>
+
+					</div>
+
+					<script type='text/javascript'
+						src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+					<script type='text/javascript' src='js/kvíz.js'></script>
+				</body>
+			</div>
+		</div>
+	</div>
+
+	<div class="tabs-content" id="galeria">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<div class="wrapper">
+						<section id="first-tab-group" class="tabgroup">
+							<div id="tab1">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/rWJBuXdr67A"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+
+								<p>Horváth András - Paksi NAPerőmű</p>
+							</div>
+							<div id="tab2">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Wa9fXR3LLsE"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+								<p>Napelemes rendszer működése. JKH Kft. www.ujenergia.jkh.hu JKH greENERGY</p>
+							</div>							
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="funfact-content" id="funfact">
+		<div class="container">
+			<div class="card">
+
+				<div class="card_part card_part-one">
+				</div>
+
+				<div class="card_part card_part-two">
+				</div>
+
+				<div class="card_part card_part-three">
+				</div>
+
+				<div class="card_part card_part-four">
+				</div>
+
+				<div class="card_part card_part-five">
+				</div>
+
+				<div class="card_part card_part-six">
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<div class="funfacttext">
+		<p>
+			<b>Transzformátorok és napelemek - fun facts:</b> A napelemek csak 30 év után veszítenek a hatásfokukból és semmilyen akadálya nincs annak, hogy lakásunkat napelemekkel lássuk el.<br>
+			<br>A napelemmel ellátott háztartások
+			száma már 5 éve nő Magyarországon. Ennek köszönhetően csökken az az
+			árammennyiség,<br> amit az országnak importálnia kell más országokból, például:
+			Oroszországból. Megtudtuk, hogy nagyon sokat fejlődött ez a technológia az elmúlt évek
+			alatt.
+			<br> <br>
+			Egy transzformátorban a feszültség áttranszformálásához két tekercsre van szükség: a
+			szekunder és a primer tekercsre. <br>A transzformátorokra azért van szükség a
+			naperőműveknél, mert a villamos energia szállítása nagyfeszültségű hálózatokon
+			örténik. <br>A napelemek egyenáramot termelnek, amit úgynevezett invertelekkel alakítanak
+			váltakozó árammá. <br>Ennek a feszültsége 420V, amit a transzformátorokkal 22000V-ra
+			transzformálunk.
+			<br>
+			<br>
+		</p>
+	</div>
+
+</body>
+</html>
